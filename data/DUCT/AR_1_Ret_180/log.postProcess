@@ -1,0 +1,170 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-3bcbaf946ae9
+Exec   : simpleFoam -postProcess -funcs (writeCellVolumes singleGraphDiag wallShearStress wallValues) -latestTime
+Date   : Jun 26 2023
+Time   : 16:26:21
+Host   : "kaj-HP-ZBook-Studio-G4"
+PID    : 88856
+I/O    : uncollated
+Case   : /home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Using #calcEntry at line 4 in file "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_e305d05308d1ade03f6eb88824101ddb2eba3278.so"
+Using #calcEntry at line 5 in file "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_8f3c4192690bcc53a34cf723aeeab9b62f638bd7.so"
+Using #calcEntry at line 6 in file "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a2727cef0b180b3b2f6a19fffe5ff7cc3de40b59.so"
+Using #calcEntry at line 7 in file "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_08de2c874f28fd753ed75007aeeceda0c9d51543.so"
+Using #calcEntry at line 8 in file "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_113c0be5b9de49cf46d2b5f510dd43edc0e2aa39.so"
+Using #calcEntry at line 9 in file "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_5fdfd6a3e530880c1cc1e3743cb143548bc9ec5d.so"
+Create mesh for time = 334
+
+
+SIMPLE: Convergence criteria found
+        k: tolerance 5e-06
+        omega: tolerance 1e-10
+
+Time = 334
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod meshWave
+bounding k, min: 0 max: 16.8911 average: 5.5031
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+}
+
+No MRF models present
+
+Creating finite volume options from "system/fvOptions"
+
+Using #calcEntry at line 20 in file "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/system/fvOptions"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_719e16a4eee744646df77bb1fb8ceab6fd60b8a7.so"
+Selecting finite volume options model type meanVelocityForce
+    Source: meanVelocity1
+    - selecting all cells
+    - selected 2209 cell(s) with volume 1e-09
+    Initial pressure gradient = 0
+
+Using #calcEntry at line 17 in file "controlDict.functions.singleGraphDiag"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_7024d18a3a0a58ccf3601934435b580ead49fb4c.so"
+Creating new library in "dynamicCode/_7024d18a3a0a58ccf3601934435b580ead49fb4c/platforms/linux64GccDPInt32Opt/lib/libcodeStream_7024d18a3a0a58ccf3601934435b580ead49fb4c.so"
+Invoking "wmake -s libso /home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/_7024d18a3a0a58ccf3601934435b580ead49fb4c"
+wmake libso /home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/_7024d18a3a0a58ccf3601934435b580ead49fb4c
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/_7024d18a3a0a58ccf3601934435b580ead49fb4c/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_7024d18a3a0a58ccf3601934435b580ead49fb4c.so
+Reading set description:
+    line
+
+wallShearStress wallShearStress:
+    processing all wall patches
+
+Reading surface description:
+    wallValues
+
+    Writing cell-volumes field V to 334
+wallShearStress wallShearStress write:
+    writing object wallShearStress
+    min/max(wallTop) = (-8.18125 -1.64132e-16 -1.14531e-16), (-0.0464667 3.27127e-16 1.31374e-16)
+    min/max(wallSide) = (-8.18125 -1.22259e-16 -2.50707e-17), (-0.0464667 8.01653e-17 9.10906e-18)
+
+
+End
+
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-3bcbaf946ae9
+Exec   : postProcess -func faceValues -latestTime
+Date   : Jun 26 2023
+Time   : 16:26:22
+Host   : "kaj-HP-ZBook-Studio-G4"
+PID    : 89132
+I/O    : uncollated
+Case   : /home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Using #calcEntry at line 4 in file "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_e305d05308d1ade03f6eb88824101ddb2eba3278.so"
+Using #calcEntry at line 5 in file "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_8f3c4192690bcc53a34cf723aeeab9b62f638bd7.so"
+Using #calcEntry at line 6 in file "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a2727cef0b180b3b2f6a19fffe5ff7cc3de40b59.so"
+Using #calcEntry at line 7 in file "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_08de2c874f28fd753ed75007aeeceda0c9d51543.so"
+Using #calcEntry at line 8 in file "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_113c0be5b9de49cf46d2b5f510dd43edc0e2aa39.so"
+Using #calcEntry at line 9 in file "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_5fdfd6a3e530880c1cc1e3743cb143548bc9ec5d.so"
+Create mesh for time = 334
+
+Using #calcEntry at line 22 in file "controlDict.functions.faceValues"
+Using #codeStream with "/home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_74d1f5d0dba714f6abc8dbfc53d142ceeeda3c68.so"
+Creating new library in "dynamicCode/_74d1f5d0dba714f6abc8dbfc53d142ceeeda3c68/platforms/linux64GccDPInt32Opt/lib/libcodeStream_74d1f5d0dba714f6abc8dbfc53d142ceeeda3c68.so"
+Invoking "wmake -s libso /home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/_74d1f5d0dba714f6abc8dbfc53d142ceeeda3c68"
+wmake libso /home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/_74d1f5d0dba714f6abc8dbfc53d142ceeeda3c68
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/kaj/Documents/thesis/inversion/DATA/Duct-Vinuesa/rans/AR_1_Ret_180/00Baseline/beta11/dynamicCode/_74d1f5d0dba714f6abc8dbfc53d142ceeeda3c68/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_74d1f5d0dba714f6abc8dbfc53d142ceeeda3c68.so
+Reading surface description:
+    faceValues
+
+Time = 334
+
+Reading fields:
+    volScalarFields: p k V omega
+    volVectorFields: U
+
+Executing functionObjects
+
+End
+

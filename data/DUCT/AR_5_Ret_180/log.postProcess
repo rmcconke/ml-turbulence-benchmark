@@ -1,0 +1,158 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-3bcbaf946ae9
+Exec   : simpleFoam -postProcess -funcs (writeCellVolumes singleGraphDiag wallShearStress wallValues) -latestTime
+Date   : May 22 2023
+Time   : 12:18:04
+Host   : "kaj-HP-ZBook-Studio-G4"
+PID    : 33087
+I/O    : uncollated
+Case   : /home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Using #calcEntry at line 4 in file "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_e305d05308d1ade03f6eb88824101ddb2eba3278.so"
+Using #calcEntry at line 5 in file "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_8f3c4192690bcc53a34cf723aeeab9b62f638bd7.so"
+Using #calcEntry at line 6 in file "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a2727cef0b180b3b2f6a19fffe5ff7cc3de40b59.so"
+Using #calcEntry at line 7 in file "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_7cee522725a33152b79f0a5194049f2dbce664c1.so"
+Using #calcEntry at line 8 in file "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_d2785449bcbe743d10f6a11c1f8672f6d3400c26.so"
+Using #calcEntry at line 9 in file "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_b02b17bcd7077dd523fa129a4fdcee4dca2473b8.so"
+Create mesh for time = 2428
+
+
+SIMPLE: Convergence criteria found
+        k: tolerance 5e-06
+        omega: tolerance 1e-10
+
+Time = 2428
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod meshWave
+bounding k, min: 0 max: 17.4073 average: 6.16701
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+}
+
+No MRF models present
+
+Creating finite volume options from "system/fvOptions"
+
+Using #calcEntry at line 20 in file "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/system/fvOptions"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_629f034966e356c4c4eb727a033adb21ecba0944.so"
+Selecting finite volume options model type meanVelocityForce
+    Source: meanVelocity1
+    - selecting all cells
+    - selected 11045 cell(s) with volume 5e-09
+    Initial pressure gradient = 0
+
+Using #calcEntry at line 17 in file "controlDict.functions.singleGraphDiag"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_274b98c45702451dc8bdc311ae7927605444e7c5.so"
+Reading set description:
+    line
+
+wallShearStress wallShearStress:
+    processing all wall patches
+
+Reading surface description:
+    wallValues
+
+    Writing cell-volumes field V to 2428
+wallShearStress wallShearStress write:
+    writing object wallShearStress
+    min/max(wallTop) = (-7.55712 -8.11627e-16 -1.57684e-16), (-0.0283849 7.74999e-16 4.63187e-16)
+    min/max(wallSide) = (-5.72128 -1.779e-16 -3.89048e-17), (-0.0277785 6.41034e-16 7.48028e-17)
+
+
+End
+
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-3bcbaf946ae9
+Exec   : postProcess -func faceValues -latestTime
+Date   : May 22 2023
+Time   : 12:18:04
+Host   : "kaj-HP-ZBook-Studio-G4"
+PID    : 33090
+I/O    : uncollated
+Case   : /home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Using #calcEntry at line 4 in file "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_e305d05308d1ade03f6eb88824101ddb2eba3278.so"
+Using #calcEntry at line 5 in file "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_8f3c4192690bcc53a34cf723aeeab9b62f638bd7.so"
+Using #calcEntry at line 6 in file "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a2727cef0b180b3b2f6a19fffe5ff7cc3de40b59.so"
+Using #calcEntry at line 7 in file "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_7cee522725a33152b79f0a5194049f2dbce664c1.so"
+Using #calcEntry at line 8 in file "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_d2785449bcbe743d10f6a11c1f8672f6d3400c26.so"
+Using #calcEntry at line 9 in file "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/system/controlDict.functions.convergenceProbes"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_b02b17bcd7077dd523fa129a4fdcee4dca2473b8.so"
+Create mesh for time = 2428
+
+Using #calcEntry at line 22 in file "controlDict.functions.faceValues"
+Using #codeStream with "/home/kaj/Documents/thesis/finalCases/rectDuct/AR_5_Ret_180/00Baseline/beta11/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_74d1f5d0dba714f6abc8dbfc53d142ceeeda3c68.so"
+Reading surface description:
+    faceValues
+
+Time = 2428
+
+Reading fields:
+    volScalarFields: p k V omega
+    volVectorFields: U
+
+Executing functionObjects
+
+End
+
