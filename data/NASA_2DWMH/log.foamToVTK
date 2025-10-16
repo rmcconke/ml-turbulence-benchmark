@@ -1,0 +1,31 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-3bcbaf946ae9
+Exec   : foamToVTK -ascii -faceSet wallFaceSet -time 0
+Date   : Aug 13 2025
+Time   : 12:04:54
+Host   : "TylerLaptop"
+PID    : 38163
+I/O    : uncollated
+Case   : /home/tbuchanan/inversion/TurbFOAM-7-Cases/2D-Seperated-Flow-Cases/PeriodicHill-OriginalCase/00Baseline_Data
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Keeping old VTK files in "/home/tbuchanan/inversion/TurbFOAM-7-Cases/2D-Seperated-Flow-Cases/PeriodicHill-OriginalCase/00Baseline_Data/VTK"
+
+Time: 0
+    FaceSet   : "/home/tbuchanan/inversion/TurbFOAM-7-Cases/2D-Seperated-Flow-Cases/PeriodicHill-OriginalCase/00Baseline_Data/VTK/wallFaceSet/wallFaceSet_0.vtk"
+End
+

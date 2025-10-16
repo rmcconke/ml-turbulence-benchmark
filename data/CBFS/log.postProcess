@@ -1,0 +1,59 @@
+I/O    : uncollated
+Case   : /home/tbuchanan/inversion/TurbFOAM-7-Cases/2D-Seperated-Flow-Cases/Curved-Backward-Facing-Step/00Baseline_data
+nProcs : 1
+Create time
+
+Create mesh for time = 30000
+
+
+SIMPLE: Convergence criteria found
+        p: tolerance 1e-15
+
+Time = 30000
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod meshWave
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.555555555555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+}
+
+No MRF models present
+
+No finite volume options present
+wallShearStress wallShearStress:
+    processing all wall patches
+
+Reading surface description:
+    bottomValues
+
+wallShearStress wallShearStress write:
+    writing object wallShearStress
+    min/max(bottomWall) = (-0.00303174608458023 -0.000172548301299562 -4.31703105639125e-17), (0.000991710526194183 0.0001355621867055 4.43889806071178e-17)
+    min/max(topWall) = (-0.00379175854178714 -2.19816956041582e-05 -7.72591765052082e-17), (-0.00147589674327582 0.000119477738298131 3.02427043164478e-16)
+
+
+End
+

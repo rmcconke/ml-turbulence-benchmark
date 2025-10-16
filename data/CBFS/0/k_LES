@@ -1,0 +1,58 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      k_LES;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -2 0 0 0 0];
+
+
+#include "interpolatedFields/k_internalField"
+#include "interpolatedFields/k_inlet"
+#include "interpolatedFields/k_outlet"
+#include "interpolatedFields/k_bottomWall"
+#include "interpolatedFields/k_topWall"
+
+internalField   $k_internalField;
+
+boundaryField
+{
+
+    bottomWall
+    {
+        type            fixedValue;
+	value           $k_bottomWall;
+    }
+    topWall
+    {
+        type            fixedValue;
+	value           $k_topWall;
+    }
+    inlet
+    {
+        type		fixedValue;
+        value		$k_inlet;
+    }
+    outlet
+    {
+        type            fixedValue;
+        value		$k_outlet;
+    }
+    frontAndBack
+    {
+        type            empty;
+    }
+}
+
+// ************************************************************************* //

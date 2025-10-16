@@ -8,6 +8,7 @@ The benchmark task is to **predict the flow field** for a series of test cases g
 
 
 # Datasets: 
+This section is a work in progress.
 ## Periodic hills
 ### Xiao 29 parametric variations dataset
 ### PHLL 10595
@@ -27,7 +28,7 @@ Coming soon.
 
 # Fields available
 The following fields are available for each of the datasets:
-- RANS predictions with the $k$-$\omega$ SST model
+- RANS predictions with the $k$ - $\omega$ SST model
 - DNS or LES "ground truth" data, including **velocity gradients**
 - "Frozen" propoagation fields
 
@@ -49,7 +50,7 @@ The below figure clarifies the validation/test split chosen for the periodic hil
 
 The benchmark scores are based on your model's performance on the test datasets.
 
-It is **strictly forbidden** that you do not train on any data from the test cases. To encourage this, we have left the ground truth data out of the test cases. However, we are aware this data is all available online. If you are found to have trained or validated on any of the test cases, your submission will be automatically withdrawn, and a note will be made on the leaderboard.
+It is **strictly forbidden** to train on any data from the test cases. To encourage this, we have left the ground truth data out of the test cases. However, we are aware this data is all available online. If you are found to have trained or validated on any of the test cases, your submission will be automatically withdrawn, and a note will be made on the leaderboard.
 
 ## Design philosophy
 This train/val/test split tests the following:
@@ -66,6 +67,8 @@ You must submit your predictions on the test dataset in **OpenFOAM format**. If 
 3. Upload your `test` subdirectory to [figshare](https://figshare.com/).
 4. Create a pull request for this git repo 
 5. The benchmark steward (currently, Ryley McConkey) will evaluate your predictions, and update the leaderboard accordingly.
+
+For more information, please see this YouTube video on how to submit to the leaderboard.
 
 
 

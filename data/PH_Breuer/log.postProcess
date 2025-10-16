@@ -1,0 +1,67 @@
+I/O    : uncollated
+Case   : /home/tbuchanan/inversion/TurbFOAM-7-Cases/2D-Seperated-Flow-Cases/PeriodicHill-OriginalCase/00Baseline_Data
+nProcs : 1
+Create time
+
+Create mesh for time = 10000
+
+
+SIMPLE: Convergence criteria found
+        p: tolerance 1e-15
+
+Time = 10000
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod meshWave
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.555555555555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+}
+
+No MRF models present
+
+Creating finite volume options from "system/fvOptions"
+
+Selecting finite volume options model type meanVelocityForce
+    Source: momentumSource
+    - selecting all cells
+    - selected 15600 cell(s) with volume 5.08082422293632
+    Reading pressure gradient from file
+    Initial pressure gradient = 0.00790931656023294
+
+wallShearStress wallShearStress:
+    processing all wall patches
+
+Reading surface description:
+    bottomValues
+
+wallShearStress wallShearStress write:
+    writing object wallShearStress
+    min/max(bottomWall) = (-0.010697532285439 -0.00470594016241014 -3.8747372802517e-16), (0.00146554366542512 0.000227649842171237 6.36793797530442e-16)
+    min/max(topWall) = (-0.00418120898141437 -1.22811961466533e-06 0), (-0.00288808313811843 6.61547822219117e-07 0)
+
+
+End
+

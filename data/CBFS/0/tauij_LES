@@ -1,0 +1,57 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volSymmTensorField;
+    object      tauij_LES;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 2 -2 0 0 0 0];
+
+
+#include "interpolatedFields/tauij_internalField"
+#include "interpolatedFields/tauij_inlet"
+#include "interpolatedFields/tauij_outlet"
+#include "interpolatedFields/tauij_bottomWall"
+#include "interpolatedFields/tauij_topWall"
+
+internalField   $tauij_internalField;
+
+boundaryField
+{
+
+    bottomWall
+    {
+        type            fixedValue;
+	value           $tauij_bottomWall;
+    }
+    topWall
+    {
+        type            fixedValue;
+	value           $tauij_topWall;
+    }
+    inlet
+    {
+        type		fixedValue;
+        value		$tauij_inlet;
+    }
+    outlet
+    {
+        type            fixedValue;
+        value		$tauij_outlet;
+    }
+    frontAndBack
+    {
+        type            empty;
+    }
+}
+
+// ************************************************************************* //
