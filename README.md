@@ -16,17 +16,15 @@ The following fields are available for each of the datasets:
 - RANS predictions with the $k$ - $\omega$ SST model
 - DNS or LES "ground truth" data, including **velocity gradients**
 ## Periodic hills 29 parametric variations
-Original data link:
+Original data link: [https://github.com/xiaoh/para-database-for-PIML](https://github.com/xiaoh/para-database-for-PIML)
 ## Periodic hills Re=10595
-Original data link:
+Original data link: [https://turbmodels.larc.nasa.gov/Other_LES_Data/2dhill_periodic.html](https://turbmodels.larc.nasa.gov/Other_LES_Data/2dhill_periodic.html)
 ## Square and rectangular duct
-Original data link:
+Original data link: [https://www.vinuesalab.com/duct/](https://www.vinuesalab.com/duct/)
 ## Curved backward-facing step
-Original data link:
-## Curved backward-facing step
-Original data link:
+Original data link: [https://turbmodels.larc.nasa.gov/Other_LES_Data/curvedstep.html](https://turbmodels.larc.nasa.gov/Other_LES_Data/curvedstep.html)
 ## NASA Wall-mounted hump  
-Original data link:
+Original data link: [https://turbmodels.larc.nasa.gov/nasahump_val.html](https://turbmodels.larc.nasa.gov/nasahump_val.html)
 
 # Challenge rules
 ## Input features and fields
