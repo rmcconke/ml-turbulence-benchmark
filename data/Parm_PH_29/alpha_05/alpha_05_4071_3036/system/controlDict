@@ -15,8 +15,6 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-libs ( "libfrozenIncompressibleTurbulenceModels.so" );
-
 application     simpleFoam;//
 
 startFrom       latestTime;
