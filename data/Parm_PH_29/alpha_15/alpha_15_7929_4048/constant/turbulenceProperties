@@ -19,10 +19,10 @@ simulationType RAS;
 
 RAS
 {
-    RASModel        AugmentedkOmegaSST;
+    RASModel        kOmegaSST;
     turbulence      on;
     printCoeffs     on;
-    baseline        true;
+
     
    
 }
