@@ -26,6 +26,18 @@ Original data link: [https://turbmodels.larc.nasa.gov/Other_LES_Data/curvedstep.
 ## NASA Wall-mounted hump  
 Original data link: [https://turbmodels.larc.nasa.gov/nasahump_val.html](https://turbmodels.larc.nasa.gov/nasahump_val.html)
 
+## 3D Cases
+All 3D case baseline meshes and RANS solutions can be accessed here:  
+**[https://surfdrive.surf.nl/s/G5ND38JxRXbWBJQ](https://surfdrive.surf.nl/s/G5ND38JxRXbWBJQ)**
+### Square and rectangular duct
+Original data link: [https://www.vinuesalab.com/duct/](https://www.vinuesalab.com/duct/)
+### Wing-body junction flow (Re = 115k)
+Original data link: [https://www.ercoftac.org/](https://www.ercoftac.org/) (ERCOFTAC DNS 1-6)
+### Ahmed Body automotive wake (Re = 760k)
+Original data link: [https://www.ercoftac.org/](https://www.ercoftac.org/) (ERCOFTAC Database)
+### Faith Hill smooth-body separation (Re = 500k)
+Original data link: [https://turbmodels.larc.nasa.gov/faith_val.html](https://turbmodels.larc.nasa.gov/faith_val.html)
+
 # Challenge rules 
 ## Input features and fields
 There are many techniques for data-driven RANS turbulence modelling. We have provided baseline $k$-$\omega$ SST fields to generate your input feature set, but you do not need to use these. **You are free to use your own input features, base turbulence model, data assimilation technique, etc.** We have relaxed these rules based on community feedback.
