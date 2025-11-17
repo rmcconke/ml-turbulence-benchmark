@@ -32,11 +32,11 @@ All 3D case baseline meshes and RANS solutions can be accessed here:
 ### Square and rectangular duct
 Original data link: [https://www.vinuesalab.com/duct/](https://www.vinuesalab.com/duct/)
 ### Wing-body junction flow (Re = 115k)
-Original data link: [https://www.ercoftac.org/](https://www.ercoftac.org/) (ERCOFTAC DNS 1-6)
+Original data link: [https://www.ercoftac.org/](https://www.kbwiki.ercoftac.org/w/index.php/DNS_1-6) (ERCOFTAC DNS 1-6)
 ### Ahmed Body automotive wake (Re = 760k)
-Original data link: [https://www.ercoftac.org/](https://www.ercoftac.org/) (ERCOFTAC Database)
+Original data link: [https://www.ercoftac.org/](http://cfd.mace.manchester.ac.uk/ercoftac/doku.php?id=cases:case082) (ERCOFTAC Database)
 ### Faith Hill smooth-body separation (Re = 500k)
-Original data link: [https://turbmodels.larc.nasa.gov/faith_val.html](https://turbmodels.larc.nasa.gov/faith_val.html)
+Original data link: [https://turbmodels.larc.nasa.gov/faith_val.html](https://turbmodels.larc.nasa.gov/Other_exp_Data/FAITH_hill_exp.html)
 
 # Challenge rules 
 ## Input features and fields
