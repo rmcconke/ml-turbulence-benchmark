@@ -1,10 +1,10 @@
 data/Duct-raw
-
+scripts/plots_data/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
 *$py.class
-
+py_env/
 # C extensions
 *.so
 
