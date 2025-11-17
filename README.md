@@ -57,7 +57,7 @@ A checkmark in the below table indicates cases where only a single parametric va
 |- | - | - |  - |
 |**PHLL29** | (21 remaining cases)|`alpha_05_10071_4048`, `alpha_05_10071_2024`, `alpha_15_7929_4048`, `alpha_15_7929_2024`| `alpha_15_13929_4048`, `alpha_15_13929_2024`, `alpha_05_4071_4048`, `alpha_05_4071_2024`|
 |**DUCT** | `AR_1_Ret_180`, `AR_3_Ret_180`,`AR_5_Ret_180`, `AR_10_Ret_180` | `AR_7_Ret_180`  |`AR_1_Ret_360`,`AR_3_Ret_360`,`AR_14_Ret_180`|
-|**CBFS13700** | ✓| | |
+|**CBFS13700** | | | ✓|
 |**NASAHUMP**| ✓ | | |
 |**PHLL10595**|  | | ✓|
 
