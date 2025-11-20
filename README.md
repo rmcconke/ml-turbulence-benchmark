@@ -1,6 +1,6 @@
 # Benchmark dataset for machine learning in RANS turbulence modelling
 
-The field of ML augmented RANS modelling has seen significant interest for at least a decade. Many methodologies have been proposed. However, a critical problem slowing progress in the field is the absence of an open-source benchmark dataset with clear evaluation criteria. In order to compare a new technique against an existing technique, significant effort is required. We aim to eliminate this required effort and greatly accelerated progress in the field by implementing a benchmark dataset for ML in RANS.
+The field of ML augmented RANS modelling has seen significant interest for at least a decade. Many methodologies have been proposed. However, a critical problem slowing progress in the field is the absence of an open-source benchmark dataset with clear evaluation criteria. In order to compare a new technique against an existing technique, significant effort is required. We aim to eliminate this required effort and greatly accelerate progress in the field by implementing a benchmark dataset for ML in RANS.
 
 Our goal is to create a challenging dataset that represents the actual state of ML-augmented RANS turbulence modelling. We aim to propose challenging generalization tasks, with the goal that over time, techniques which generalize better will rise to the top of the leaderboard. We do not want to cast the field in an overly optimistic light; we want to provide a hard challenge that will motivate new ideas in the field.
 
@@ -9,7 +9,10 @@ The benchmark task is to **predict the flow field** for a series of test cases g
 This is an **ongoing** challenge. It is not associated with any particular conference or event. This running leaderboard aims to summarize the state of the art in the field of ML for RANS turbulence modelling.
 
 ## Current status
-We've provided all the data here: some training/validation data, and the test cases. However, we're still working on the evaluation script and python package for the challenge. We will have this ready by November 20, 2025. If you have questions or suggestions as this challenge is developed, please open an issue in this repo. This is a community effort!
+- We've provided all the data here: some training/validation data, and the test cases. 
+- A python package (`closure-challenge`) is available, which provides the scoring code. See the package details and usage here: [https://github.com/rmcconke/closure-challenge](https://github.com/rmcconke/closure-challenge). 
+
+If you have questions or suggestions as this challenge is developed, please open an issue in this repo. This is a community effort!
 
 # Datasets
 The following fields are available for each of the datasets:
@@ -77,15 +80,17 @@ The train/val/test split in the challenge tests the following:
 - Galilean invariance (model predictions do not change with a Galilean boost of the input features)
 
 # Submission instructions
+The submission procedure is currently a work in progress. However, the scoring code is available here: [closure-challenge](https://github.com/rmcconke/closure-challenge).
+
 You must submit your predictions on the test dataset in **CSV format**.
 
-1. Save your predictions in CSV format under the respective directories in the `test` subdirectory of the benchmark dataset.
-2. You can preview what your score will be using the benchmark dataset's python package.
+1. Save your interpolated predictions in CSV format under the respective directories in the `test` subdirectory of the benchmark dataset. You can easily get the evaluation points using the [python package](https://github.com/rmcconke/closure-challenge) for the challenge. These points are also provided for convenience under `data/evaluation_points`.
+2. You can preview what your score will be using the benchmark dataset's [python package](https://github.com/rmcconke/closure-challenge).
 3. Upload your `test` subdirectory to [figshare](https://figshare.com/).
 4. Create a pull request for this git repo 
 5. The benchmark steward (currently, Ryley McConkey) will evaluate your predictions, and update the leaderboard accordingly.
 
-For more information, please see the YouTube video (in preparation) on how to submit to the leaderboard.
+A YouTube video showing the submission process is currently being prepared. It will be ready in time for the first submission deadline (expected January 2025).
 
 
 
